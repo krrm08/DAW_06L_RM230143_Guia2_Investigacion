@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplos de metodos MATH.</title>
+</head>
+<body>
+  <h1>Ejemplos de metodos Math</h1>
+  
+  <p><strong>abs()</strong> - Valor absoluto de un número:</p>
+  <p>Valor absoluto de -5: <span id="resulabs"></span></p>
+  
+  <p><strong>round()</strong> - Redondeo de un número:</p>
+  <p>Redondeo de 3.7: <span id="resulround"></span></p>
+  
+  <p><strong>ceil()</strong> - Redondeo hacia arriba:</p>
+  <p>Redondeo hacia arriba de 2.1: <span id="resulceil"></span></p>
+  
+  <p><strong>floor()</strong> - Redondeo hacia abajo:</p>
+  <p>Redondeo hacia abajo de 4.9: <span id="resulfloor"></span></p>
+  
+  <p><strong>exp()</strong> - Función exponencial:</p>
+  <p>e^2: <span id="resulexp"></span></p>
+  
+  <p><strong>log()</strong> - Logaritmo natural:</p>
+  <p>Logaritmo natural de 10: <span id="resullog"></span></p>
+  
+  <p><strong>random()</strong> - Número aleatorio:</p>
+  <p>Número aleatorio entre 0 y 1: <span id="random"></span></p>
+  
+  <script>
+    // Función abs
+    let absNumber = -5;
+    let absValue = Math.abs(absNumber);
+    document.getElementById("resulabs").textContent = absValue;
+    
+    // Función round
+    let roundNumber = 3.7;
+    let roundedValue = Math.round(roundNumber);
+    document.getElementById("resulround").textContent = roundedValue;
+    
+    // Función ceil
+    let ceilNumber = 2.1;
+    let ceilValue = Math.ceil(ceilNumber);
+    document.getElementById("resulceil").textContent = ceilValue;
+    
+    //Función floor
+    let floorNumber = 4.9;
+    let floorValue = Math.floor(floorNumber);
+    document.getElementById("resulfloor").textContent = floorValue;
+    
+    //Función exp
+    let expValue = Math.exp(2);
+    document.getElementById("resulexp").textContent = expValue;
+    
+    // Función log
+    let logNumber = 10;
+    let logValue = Math.log(logNumber);
+    document.getElementById("resullog").textContent = logValue;
+    
+    // Función random
+    let randomValue = Math.random();
+    document.getElementById("random").textContent = randomValue;
+  </script>
+</body>
+</html>
